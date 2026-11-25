@@ -10,7 +10,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/issues")
-@CrossOrigin(origins = "http://localhost:5173") // Enables connection from React frontend
 public class IssueController {
 
     @Autowired

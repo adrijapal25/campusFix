@@ -17,7 +17,7 @@ services:
 
   - type: web
     name: campusfix-backend
-    runtime: java
+    runtime: docker
     buildCommand: mvn clean package -DskipTests
     startCommand: java -jar target/*.jar
     envVars:

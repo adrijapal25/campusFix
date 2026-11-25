@@ -7,10 +7,19 @@ services:
     staticPublishPath: dist
     envVars:
       - key: VITE_API_URL
-        value: https://campusfix-production-203f8f19.up.railway.app
+        value: https://campusfix-backend.onrender.com
       - key: REACT_APP_API_URL
-        value: https://campusfix-production-203f8f19.up.railway.app
+        value: https://campusfix-backend.onrender.com
     routes:
       - type: rewrite
         source: /*
         destination: /index.html
+
+  - type: web
+    name: campusfix-backend
+    runtime: java
+    buildCommand: mvn clean package -DskipTests
+    startCommand: java -jar target/*.jar
+    envVars:
+      - key: SPRING_PROFILES_ACTIVE
+        value: prod

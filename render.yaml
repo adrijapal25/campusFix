@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: campusfix-frontend
+    runtime: static
+    rootDir: frontend
+    buildCommand: npm install && npm run build
+    publishPath: dist
+    envVars:
+      - key: VITE_API_URL
+        value: https://campusfix-production-203f8f19.up.railway.app
+      - key: REACT_APP_API_URL
+        value: https://campusfix-production-203f8f19.up.railway.app
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html

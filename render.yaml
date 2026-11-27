@@ -25,6 +25,7 @@ services:
         value: prod
       - key: SPRING_DATASOURCE_URL
         value: jdbc:postgresql://ep-calm-thunder-bdpowqif-pooler.c-8.us-east-2.aws.neon.tech:5432/neondb?sslmode=require
+      - key: SPRING_DATASOURCE_USERNAME
         value: neondb_owner
       - key: SPRING_DATASOURCE_PASSWORD
         value: npg_dpBjUGN7DkH9

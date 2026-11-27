@@ -19,7 +19,6 @@ services:
     name: campusfix-backend
     runtime: docker
     plan: free
-    rootDir: backend
     envVars:
       - key: SPRING_PROFILES_ACTIVE
         value: prod

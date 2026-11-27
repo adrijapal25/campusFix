@@ -19,12 +19,12 @@ services:
     name: campusfix-backend
     runtime: docker
     plan: free
+
     envVars:
       - key: SPRING_PROFILES_ACTIVE
         value: prod
       - key: SPRING_DATASOURCE_URL
-        value: jdbc:postgresql://ep-calm-thunder-bdpowqif-pooler.c-8.us-east-2.aws.neon.tech:5432/neondb?sslmode=require&channel_binding=require
-      - key: SPRING_DATASOURCE_USERNAME
+        value: jdbc:postgresql://ep-calm-thunder-bdpowqif-pooler.c-8.us-east-2.aws.neon.tech:5432/neondb?sslmode=require
         value: neondb_owner
       - key: SPRING_DATASOURCE_PASSWORD
         value: npg_dpBjUGN7DkH9

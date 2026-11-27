@@ -28,6 +28,6 @@ services:
       - key: SPRING_DATASOURCE_USERNAME
         value: neondb_owner
       - key: SPRING_DATASOURCE_PASSWORD
-        value: npg_dpBjUGN7DkH9
+        value: npg_TbzVyG8IOSx3
       - key: SPRING_DATASOURCE_DRIVER
         value: org.postgresql.Driver
